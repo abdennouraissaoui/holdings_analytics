@@ -19,7 +19,7 @@ df_formatting = {
 def to_dollar_format(value):
 	return "${:,.2f}".format(value)
 
-wallet_address = st.text_input("Enter address:", "0x2139bf99eA01a129aE11c9Cf046e2e189bA6eE0a")
+wallet_address = st.text_input("Enter address:", "")
 
 if wallet_address != '':
 	ts_positions = pd.read_csv(f"{wallet_address}/ts_positions.csv", index_col=0, parse_dates=True).resample("D").last()
