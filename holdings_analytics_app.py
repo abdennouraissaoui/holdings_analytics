@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
 
-st.write("""
-# FLUIDEFI
-### *Wallet performance analysis*
-""")
+# st.write("""
+# # FLUIDEFI
+# ### *Wallet performance analysis*
+# """)
 
 df_formatting = {
 	"Avg buy price": "${:,.2f}",
