@@ -6,6 +6,8 @@ import pandas as pd
 # ### *Wallet performance analysis*
 # """)
 
+st.set_page_config(layout="wide")
+
 df_formatting = {
 	"Avg buy price": "${:,.2f}",
 	"Price": "${:,.2f}",
